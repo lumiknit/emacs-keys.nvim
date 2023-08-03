@@ -17,7 +17,8 @@ local setup = function()
   end
   keymaps = {
     -- Cancel
-    km('cv', '<C-g>', '<Esc>'),
+    km('c', '<C-g>', '<Esc>'),
+    km('v', '<C-g>', '<C-o>i'),
     km('i', '<C-g>', ''),
     -- Cursor Move
     km('niv', '<M-m>', '<C-o>^'),
@@ -47,6 +48,7 @@ local setup = function()
       end
     end, {silent = true, expr = true}),
     km('v', '<C-k>', 'd'),
+    km('iv', '<M-^>', '<C-o>k<C-o>J<C-o>a'),
     -- Copy / Paste
     km('v', '<C-w>', 'd'),
     km('v', '<M-w>', 'y'),
@@ -61,7 +63,8 @@ local setup = function()
     km('niv', '<C-_>', '<C-o>u', silent),
     km('niv', '<C-?>', '<C-r>', silent),
     -- Search
-    km('iv', '<C-s>', '<C-o>/', {}),
+    km('i', '<C-s>', '<C-o>/', {}),
+    km('v', '<C-s>', '<C-o>:/', {}),
     -- Window split
     km('niv', '<C-x>2', '<C-w>s'),
     km('niv', '<C-x>3', '<C-w>v'),
