@@ -41,7 +41,7 @@ local setup = function()
       local col = vim.api.nvim_win_get_cursor(0)[2]
       local line = vim.api.nvim_get_current_line()
       if #line <= col then
-        return "<C-o>J<C-o>dl"
+        return "<C-o>gJ"
       else
         return "<C-o>d$"
       end
