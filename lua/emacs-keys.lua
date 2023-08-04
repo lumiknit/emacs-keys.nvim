@@ -51,7 +51,7 @@ local setup = function()
     -- Copy / Paste
     km('v', '<C-w>', 'd'),
     km('v', '<M-w>', 'y'),
-    km('niv', '<C-y>', '<C-o>p'),
+    km('niv', '<C-y>', ' <BS><C-o>p'),
     -- Selection
     km('i', '<C-space>', '<C-o>v'),
     km('v', '<C-space>', '<Esc>'),
