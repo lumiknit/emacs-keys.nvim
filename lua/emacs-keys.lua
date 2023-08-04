@@ -17,8 +17,7 @@ local setup = function()
   end
   keymaps = {
     -- Cancel
-    km('c', '<C-g>', '<Esc>'),
-    km('v', '<C-g>', '<C-o>i'),
+    km('cv', '<C-g>', '<Esc>'),
     km('i', '<C-g>', ''),
     -- Cursor Move
     km('niv', '<M-m>', '<C-o>^'),
