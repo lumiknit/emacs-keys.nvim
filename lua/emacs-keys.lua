@@ -29,6 +29,9 @@ local setup = function()
     km('niv', '<M-f>', '<C-o>w'),
     km('niv', '<C-n>', '<Down>'),
     km('niv', '<C-p>', '<Up>'),
+    km('i', '<C-v>', '<C-o><C-d>'),
+    km('v', '<C-k>', 'd'),
+    km('i', '<M-v>', '<C-o><C-u>'),
     -- Jump
     km('niv', '<M-g>', '<C-o>:', {}),
     km('niv', '<M-<>', '<C-o>gg'),
@@ -47,6 +50,7 @@ local setup = function()
       end
     end, {silent = true, expr = true}),
     km('v', '<C-k>', 'd'),
+    km('v', '<BS>', '<Del>'),
     km('iv', '<M-^>', '<C-o>k<C-o>J<C-o>a'),
     -- Copy / Paste
     km('v', '<C-w>', 'd'),
