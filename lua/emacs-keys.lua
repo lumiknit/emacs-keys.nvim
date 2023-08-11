@@ -29,8 +29,10 @@ local setup = function()
     km('niv', '<M-f>', '<C-o>w'),
     km('niv', '<C-n>', '<Down>'),
     km('niv', '<C-p>', '<Up>'),
-    km('iv', '<C-v>', '<C-o><C-d>'),
-    km('iv', '<M-v>', '<C-o><C-u>'),
+    km('i', '<C-v>', '<C-o><C-d>'),
+    km('v', '<C-v>', '<C-d>'),
+    km('i', '<M-v>', '<C-o><C-u>'),
+    km('v', '<M-v>', '<C-u>'),
     -- Jump
     km('niv', '<M-g>', '<C-o>:', {}),
     km('niv', '<M-<>', '<C-o>gg'),
