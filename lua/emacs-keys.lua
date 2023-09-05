@@ -74,9 +74,9 @@ local setup = function()
     km('v', '<C-s>', '<C-o>:/', {}),
     -- Window split
     km('niv', '<C-x>1', '<cmd>only<cr>'),
-    km('niv', '<C-x>2', '<C-w>s'),
-    km('niv', '<C-x>3', '<C-w>v'),
-    km('niv', '<C-x>o', '<C-w><C-w>'),
+    km('niv', '<C-x>2', '<C-o><C-w>s'),
+    km('niv', '<C-x>3', '<C-o><C-w>v'),
+    km('niv', '<C-x>o', '<C-o><C-w><C-w>'),
     -- Command
     km('niv', '<M-x>', '<C-o>:'),
     -- Files
