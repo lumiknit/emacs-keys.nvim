@@ -68,7 +68,8 @@ local setup = function()
     km('niv', '<C-x>u', '<C-o>u', silent),
     km('niv', '<C-/>', '<C-o>u', silent),
     km('niv', '<C-_>', '<C-o>u', silent),
-    km('niv', '<C-?>', '<C-r>', silent),
+    km('niv', '<C-?>', '<C-o><C-r>', silent),
+    km('niv', '<C-r>', '<C-o><C-r>', silent),
     -- Search
     km('i', '<C-s>', '<C-o>/', {}),
     km('v', '<C-s>', '<C-o>:/', {}),
@@ -82,7 +83,7 @@ local setup = function()
     -- Files
     km('niv', '<C-x><C-s>', '<cmd>w<cr>'),
     km('niv', '<C-x><C-b>', '<cmd>buffers<cr>'),
-    km('niv', '<C-x><C-f>', '<C-o>:e '),
+    --km('niv', '<C-x><C-f>', '<C-o>:e '),
     km('niv', '<C-x><C-w>', '<C-o>:w '),
     km('niv', '<C-x>b', '<C-o>:b '),
     km('niv', '<C-x><C-c>', '<cmd>:q<cr>'),
