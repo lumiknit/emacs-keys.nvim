@@ -16,6 +16,8 @@ local setup = function()
     }
   end
   keymaps = {
+    -- Remove ctrl x keybinding
+    km('nicv', '<C-x>', '<Nop>'),
     -- Cancel
     km('cv', '<C-g>', '<Esc>'),
     km('i', '<C-g>', ''),
@@ -63,6 +65,7 @@ local setup = function()
     km('i', '<C-@>', '<C-o>v'),
     km('v', '<C-@>', '<Esc>'),
     -- Undo / Redo
+    km('niv', '<C-x>u', '<C-o>u', silent),
     km('niv', '<C-/>', '<C-o>u', silent),
     km('niv', '<C-_>', '<C-o>u', silent),
     km('niv', '<C-?>', '<C-r>', silent),
@@ -70,13 +73,19 @@ local setup = function()
     km('i', '<C-s>', '<C-o>/', {}),
     km('v', '<C-s>', '<C-o>:/', {}),
     -- Window split
+    km('niv', '<C-x>1', '<cmd>only<cr>'),
     km('niv', '<C-x>2', '<C-w>s'),
     km('niv', '<C-x>3', '<C-w>v'),
+    km('niv', '<C-x>o', '<C-w><C-w>'),
     -- Command
     km('niv', '<M-x>', '<C-o>:'),
     -- Files
     km('niv', '<C-x><C-s>', '<cmd>w<cr>'),
     km('niv', '<C-x><C-b>', '<cmd>buffers<cr>'),
+    km('niv', '<C-x><C-f>', '<C-o>:e '),
+    km('niv', '<C-x><C-w>', '<C-o>:w '),
+    km('niv', '<C-x>b', '<C-o>:b '),
+    km('niv', '<C-x><C-c>', '<cmd>:q<cr>'),
   }
   for _, v in ipairs(keymaps) do
     vim.keymap.set(v.mode, v.key, v.cmd, v.opt)
