@@ -65,11 +65,11 @@ local setup = function()
     km('i', '<C-@>', '<C-o>v'),
     km('v', '<C-@>', '<Esc>'),
     -- Undo / Redo
-    km('niv', '<C-x>u', '<C-o>u', silent),
-    km('niv', '<C-/>', '<C-o>u', silent),
-    km('niv', '<C-_>', '<C-o>u', silent),
-    km('niv', '<C-?>', '<C-o><C-r>', silent),
-    km('niv', '<C-r>', '<C-o><C-r>', silent),
+    km('niv', '<C-x>u', '<cmd>undo<cr>', silent),
+    km('niv', '<C-/>', '<cmd>undo<cr>', silent),
+    km('niv', '<C-_>', '<cmd>undo<cr>', silent),
+    km('niv', '<C-?>', '<cmd>redo<cr>', silent),
+    km('niv', '<C-r>', '<cmd>redo<cr>', silent),
     -- Search
     km('i', '<C-s>', '<C-o>/', {}),
     km('v', '<C-s>', '<C-o>:/', {}),
